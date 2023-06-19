@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=pt-br">
+<html lang="pt-br">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +8,59 @@
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <header>
-
+   <header class="header">
+      <div class="menu-top">
+         <a href="#"><img class="icon--small" src="img/menu-icon--profile.svg" alt="profile icon"></a>
+         <a href="#"><img class="icon--small" src="img/menu-icon--help.svg" alt="help icon"></a>
+         <a href="#"><img class="icon--small" src="img/menu-icon--EA.svg" alt="EA icon"></a>
+      </div>
+      <div class="menu menu--display">
+         <ul class="menu__list">
+            <li class="menu__item menu__item--logo">
+               <button class="button menu__button menu__button--open"> 
+                  <img class="button__icon" src="img/menu-icon--open.svg" alt="menu icon open">
+               </button>
+               <div class="side-bar__icon">
+                  <div class="side-bar__circle"></div>
+                  <div class="side-bar__circle"></div>
+                  <div class="side-bar__circle"></div>
+               </div>
+               <a class="menu__link menu__link--logo" href="#">BATTLEFIELD</a>
+            </li>
+            <li class="menu__item menu__item--text"><a class="menu__link" href="#">jogos</a></li>
+            <li class="menu__item menu__item--text"><a class="menu__link" href="#">noticias</a></li>
+            <li class="menu__item menu__item--text"><a class="menu__link" href="#">fóruns</a></li>
+            <li class="menu__item menu__item--text"><a class="menu__link" href="#">direito do battlefield</a></li>
+         </ul>
+         <ul class="menu__list--mobile hidden">
+            <li class="menu__item menu__item--logo">
+               <a class="menu__link menu__link--logo" href="#">BATTLEFIELD</a>
+               <button class="button menu__button menu__button--close"> 
+                  <img class="button__icon" src="img/menu-icon--close.svg" alt="menu icon close">
+               </button>
+            </li>
+            <li class="menu__item menu__item--text"><a class="menu__link" href="#">jogos</a></li>
+            <li class="menu__item menu__item--text"><a class="menu__link" href="#">noticias</a></li>
+            <li class="menu__item menu__item--text"><a class="menu__link" href="#">fóruns</a></li>
+            <li class="menu__item menu__item--text"><a class="menu__link" href="#">direito do battlefield</a></li>
+         </ul>
+      </div>
    </header>
+   <aside class="aside hidden">
+      <button class="aside__button">
+         <img class="aside__button__icon" src="img/menu-icon--close.svg" alt="close icon">
+      </button>
+      <div class="aside__container--normal aside__container--top">
+         <h1 class="title title-small"></h1>
+      </div>
+      <div class="aside__container--small aside__container--left">
+         <h1 class="title title-small"></h1>
+      </div>
+      <div class="aside__container--small aside__container--right">
+         <h1 class="title title-small"></h1>
+      </div>
+      <h1>todos os battlefield</h1>
+   </aside>
    <main>
 
    </main>
