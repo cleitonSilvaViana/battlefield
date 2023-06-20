@@ -30,7 +30,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
    font-family: serif;
    font-weight: bold;
-   text-shadow: 0 0 3px;
+   text-shadow: 0 0 1px;
    text-transform: uppercase;
 }
 
@@ -43,6 +43,11 @@ p {
 /* GLOBAL CLASS */
 .container {
    width: 85vw;
+   margin: auto;
+}
+
+.container--90 {
+   width: 90vw;
    margin: auto;
 }
 
@@ -59,7 +64,12 @@ p {
 }
 
 .title--large {
-   font-size: 3.5rem;
+   font-size: 4rem;
+   padding: 50px 0;
+}
+
+.text--center {
+   text-align: center;
 }
 
 .text--white {
@@ -68,6 +78,14 @@ p {
 
 .text--orange {
    color: var(--orange);
+}
+
+.text--upper {
+   text-transform: uppercase;
+}
+
+.text--bold {
+   font-weight: bold;
 }
 
 .button {
@@ -136,13 +154,12 @@ p {
    background-color: var(--gray);
    height: 40px;
    width: 100%;
+}
 
+.menu-top div {
    display: flex;
    align-items: center;
    justify-content: flex-end;
-
-   padding: 0 50px;
-
 }
 
 .menu-top--position {
@@ -173,7 +190,6 @@ p {
 .menu {
    background-color: var(--black);
    height: 60px;
-   padding: 0 50px;
 }
 
 .menu--display {
@@ -333,6 +349,10 @@ p {
 .main {
 }
 
+.main__background__mobile {
+   display: none;
+}
+
 .main__background {
    background-image: url(img/battlefield-wallpaper.jpg);
    background-position: center;
@@ -345,7 +365,7 @@ p {
 
 .main__conteiner {
    width: 40vw;
-   min-width: 350px;
+   min-width: 400px;
 
    display: flex;
    flex-direction: column;
@@ -389,6 +409,147 @@ p {
 .main-footer__div img {
    width: 200px;
 }
+
+/* BOXIES */
+.boxies {
+   background-color: var(--black);
+   padding: 50px 0;
+}
+
+.boxies h1:first-of-type {
+   padding-top: 0;
+}
+
+.boxies__container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   grid-template-rows: auto;
+   grid-auto-flow: row;
+   justify-content: space-evenly;
+   align-content: center;
+   justify-items: center;
+   align-items: center;
+   gap: 20px;
+}
+
+.boxies__content {
+   display: block;
+   width: 100%;
+   height: calc((90vw)/3) ;
+   background-color: #912e43;
+}
+
+.boxies .button {
+   display: block;
+   margin: 50px auto;
+}
+
+
+.news__container {
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-template-rows: 1fr;
+}
+
+.news__container:hover {
+
+}
+
+.news__container p, .news__container h2 {
+   color: black;
+}
+
+.news__content {
+   background-color: rgba(255, 255, 255, 0.932);
+   height: 100% ;
+   transition: all ease-out .5s;
+}
+
+.news__content:hover{
+   transform: translateY(-20px);
+}
+
+.news__image {
+   display: block;
+   width: 100%;
+}
+
+.news__text {
+   padding: 15px;
+}
+
+.news__dates {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.news__game-name {
+   color: var(--orange);
+   display: inline-block;
+}
+
+.news__date {
+   display: inline-block;
+}
+
+.news__title {
+   margin: 15px 0;
+}
+
+.news__content p {
+   text-align: left;
+}
+
+.container__buton-more {
+   margin: 70px auto;
+}
+
+.button--more {
+   background-color: transparent;
+   border: 2px solid lightslategray;
+   padding: 20px;
+   width: 100%;
+   cursor: pointer;
+   border-radius: 5px;
+   transition: all ease-out .3s;
+}
+
+.button--more:hover {
+   border: 2px solid white;
+}
+
+.button--more:hover .button-more__icon {
+   transform: scale(1.1);
+   border: 2px solid white;
+}
+
+.button-more__icon {
+   border: 2px solid lightslategray;
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: all ease-out .3s;
+}
+
+.button-more__icon img {
+   width: 35px;
+   height: 35px;
+}
+
+.button--more h2 {
+   color: rgba(255, 255, 255, 0.473);
+   margin-top: 15px;
+   transition: all ease-out .5s;
+}
+
+.button--more:hover h2 {
+   color: white;
+}
+
 
 
 
@@ -454,13 +615,67 @@ p {
       display: none;
    }
 
+
+
+   .main__background {
+      display: contents;
+   }
+   
+   .main__background__mobile{
+      display: block;
+      height: 50vw;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(img/battlefield-wallpaper--mobile.jpg);
+   }
+
    .main__conteiner {
-      margin: auto;
-      background-color: rgba(0, 0, 0, 0.548);
+      width: 100%;
+      background-color: var(--gray);
       padding: 50px;
    }
- 
 
+   .main__logo {
+      display: none;
+   }
+ 
+}
+
+@media screen and (max-width: 500px) {
+
+   button {
+      width: 100%;
+   }
+
+   .main__conteiner {
+      padding: 25px;
+      min-width: auto;
+
+   }
+
+      .main__footer {
+         padding: 25px 0;
+      }
+
+      .main-footer__div {
+         width: 100%;
+      }
+      
+      .main__footer__contents, .main-footer__div {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 20px;
+      }
+
+      .main__footer__contents h2 {
+         text-align: center;
+      }
+
+      .boxies__content {
+         height: 90vw;
+      }
 }
 
 

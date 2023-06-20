@@ -10,12 +10,14 @@
 <body>
    <header class="header">
       <div class="menu-top">
-         <a class="menu-top__link" href="#"><img class="icon--small" src="img/menu-icon--profile.svg" alt="profile icon"></a>
-         <a class="menu-top__link" href="#"><img class="icon--small" src="img/menu-icon--help.svg" alt="help icon"></a>
-         <a class="menu-top__link" href="#"><img class="icon--small" src="img/menu-icon--EA.svg" alt="EA icon"></a>
+         <div class="container--90">
+            <a class="menu-top__link" href="#"><img class="icon--small" src="img/menu-icon--profile.svg" alt="profile icon"></a>
+            <a class="menu-top__link" href="#"><img class="icon--small" src="img/menu-icon--help.svg" alt="help icon"></a>
+            <a class="menu-top__link" href="#"><img class="icon--small" src="img/menu-icon--EA.svg" alt="EA icon"></a>
+         </div>
       </div>
       <div class="menu menu--display">
-         <ul class="menu__list">
+         <ul class="menu__list container--90">
             <li class="menu__item menu__item--logo">
                <button class="menu__button menu__button--open"> 
                   <img class="button__icon" src="img/menu-icon--open.svg" alt="menu icon open">
@@ -62,9 +64,10 @@
       <h1 class="title-normal text--white">todos os battlefield</h1>
    </aside>
    <main class="main">
+      <div class="main__background__mobile"></div>
       <div class="main__background">
          <div class="main__conteiner">
-            <img src="img/logo--main.svg" alt="battlefield 2042">
+            <img class="main__logo" src="img/logo--main.svg" alt="battlefield 2042">
             <p class="text--white">Mostre que você é capaz de se adaptar e superar um mundo num futuro próximo, transformado pela desordem.</p>
             <div class="main__container__button">
                <button class="button background--orange">Explore o Battlefield 2042</button>
@@ -78,11 +81,71 @@
                <a class="scale" href="#">
                   <img src="img/icon--ea-play.svg" alt="EA icon">
                </a>
-               <button class="button button--white">inscreva-se já</button>
+               <button class="button button--white text--bold text--upper">inscreva-se já</button>
             </div>
          </div>
       </div>
    </main>
+   <article class="boxies">
+      <h1 class="title--large text--center text--white">jogos battlefield</h1>
+      <div class="boxies__container container">
+         <div class="boxies__content">
+            <a class="boxies__image-link" href="#"><h3 class="title--small"></h3></a>
+         </div>
+         <div class="boxies__content">
+            <a class="boxies__image-link" href="#"><h3 class="title--small"></h3></a>
+         </div>
+         <div class="boxies__content">
+            <a class="boxies__image-link" href="#"><h3 class="title--small"></h3></a>
+         </div>
+      </div>
+      <button class="button button--white text--upper text--bold">todos os jogos de battlefield</button>
+
+      <h1 class="title--large text--center text--white">últimas notícias</h1>
+      <div class="news__container boxies__container container">
+         <a class="news__content boxies__content" href="#">
+            <img class="news__image" src="img/battlefield-news__image.jpg" alt="battlefield atualization 5.0.0 image">
+            <div class="news__text">
+               <div class="news__dates">
+                  <h3 class="news__game-name">battlefield 2042</h3>
+                  <p class="news__date">02/06/2023</p>
+               </div>
+               <h2 class="news__title title--small">atualização 5.0.0 de battlefield 2042</h2>
+               <p>O que há de novo na Temporada 5: Novo Amanhecer do Battlefield 2042</p>
+            </div>
+         </a>
+         <a class="news__content boxies__content" href="#">
+            <img class="news__image" src="img/battlefield-news__image-2" alt="battlefield update image">
+            <div class="news__text">
+               <div class="news__dates">
+                  <h3 class="news__game-name">battlefield 2042</h3>
+                  <p class="news__date">30/05/2023</p>
+               </div>
+               <h2 class="news__title title--small">Briefing do Battlefield - Atualização de Desenvolvimento - maio de 2023</h2>
+               <p>Briefing do Battlefiekd - Atualização de Desenvolvimento - maio 2023</p>
+            </div>
+         </a>
+         <a class="news__content boxies__content" href="#">
+            <img class="news__image" src="img/battlefield-news__image-3" alt="battlefield update image">
+            <div class="news__text">
+               <div class="news__dates">
+                  <h3 class="news__game-name">battlefield 2042</h3>
+                  <p class="news__date">24/05/2023</p>
+               </div>
+               <h2 class="news__title title--small">Notas de Desenvolvimento - Reformulando o equipamento dos veículos</h2>
+               <p>Notas de Desenvolvimento reformulando o equipamento dos veículos</p>
+            </div>
+         </a>
+      </div>
+      <div class="container__buton-more container ">
+         <button class="button--more">
+            <div class="button-more__icon">
+               <img src="img/icon--more.svg" alt="icon more">
+            </div>
+            <h2 class="text--upper">carregar mais</h2>
+         </button>
+      </div>
+   </article>
    <footer>
       
    </footer>
