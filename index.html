@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,23 @@
    <title>Battlefield</title>
    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
    <header class="header">
       <div class="menu-top">
          <div class="container--90">
-            <a class="menu-top__link" href="#"><img class="icon--small" src="img/menu-icon--profile.svg" alt="profile icon"></a>
-            <a class="menu-top__link" href="#"><img class="icon--small" src="img/menu-icon--help.svg" alt="help icon"></a>
-            <a class="menu-top__link" href="#"><img class="icon--small" src="img/menu-icon--EA.svg" alt="EA icon"></a>
+            <a class="menu-top__link" href="#"><img class="icon--small" src="img/menu--icon---profile.svg"
+                  alt="profile icon"></a>
+            <a class="menu-top__link" href="#"><img class="icon--small" src="img/menu--icon---help.svg"
+                  alt="help icon"></a>
+            <a class="menu-top__link" href="#"><img class="icon--small" src="img/menu--icon---EA.svg" alt="EA icon"></a>
          </div>
       </div>
       <div class="menu menu--display">
          <ul class="menu__list container--90">
             <li class="menu__item menu__item--logo">
-               <button class="menu__button menu__button--open"> 
-                  <img class="button__icon" src="img/menu-icon--open.svg" alt="menu icon open">
+               <button class="menu__button menu__button--open">
+                  <img class="button__icon" src="img/burguer--icon---open.svg" alt="menu icon open">
                </button>
                <div class="side-bar__icon">
                   <div class="side-bar__circle"></div>
@@ -37,8 +41,8 @@
          <ul class="menu__list--mobile hidden">
             <li class="menu__item menu__item--logo">
                <a class="menu__link menu__link--logo" href="#">BATTLEFIELD</a>
-               <button class="button menu__button menu__button--close"> 
-                  <img class="button__icon" src="img/menu-icon--close.svg" alt="menu icon close">
+               <button class="button menu__button menu__button--close">
+                  <img class="button__icon" src="img/burguer--icon---close.svg" alt="menu icon close">
                </button>
             </li>
             <li class="menu__item menu__item--text"><a class="menu__link" href="#">jogos</a></li>
@@ -50,25 +54,26 @@
    </header>
    <aside class="aside hidden">
       <button class="aside__button">
-         <img class="aside__button__icon" src="img/menu-icon--close.svg" alt="close icon">
+         <img class="aside__button__icon" src="img/burguer--icon---close.svg" alt="close icon">
       </button>
-      <div class="aside__container--normal aside__container--top">
-         <h1 class="title-small"></h1>
-      </div>
-      <div class="aside__container--small aside__container--left">
-         <h1 class="title-small"></h1>
-      </div>
-      <div class="aside__container--small aside__container--right">
-         <h1 class="title-small"></h1>
-      </div>
-      <h1 class="title-normal text--white">todos os battlefield</h1>
+      <a class="aside__container--normal aside__container--top link__battlefield link__battlefield--1" href="#">
+         <h3 class="title">BATTLEFIELD <br>1</h3>
+      </a>
+      <a class="aside__container--small aside__container--left link__battlefield link__battlefield--4" href="#">
+         <h3 class="title">BATTLEFIELF <br>4</h3>
+      </a>
+      <a class="aside__container--small aside__container--right link__battlefield link__battlefield--5" href="#">
+         <h3 class="title ">BATTLEFIELD <br>5</h3>
+      </a>
+      <h2 class="title text--white">todos os battlefield</h2>
    </aside>
    <main class="main">
       <div class="main__background__mobile"></div>
       <div class="main__background">
          <div class="main__conteiner">
-            <img class="main__logo" src="img/logo--main.svg" alt="battlefield 2042">
-            <p class="text--white">Mostre que você é capaz de se adaptar e superar um mundo num futuro próximo, transformado pela desordem.</p>
+            <img class="main__logo" src="img/logo--battlefield-2042.svg" alt="battlefield 2042">
+            <p class="text--white">Mostre que você é capaz de se adaptar e superar um mundo num futuro próximo,
+               transformado pela desordem.</p>
             <div class="main__container__button">
                <button class="button background--orange">Explore o Battlefield 2042</button>
             </div>
@@ -79,7 +84,7 @@
             <h2 class="title--small text--white">leve seus jogos mais além</h2>
             <div class="main-footer__div">
                <a class="scale" href="#">
-                  <img src="img/icon--ea-play.svg" alt="EA icon">
+                  <img src="img/ea--play.svg" alt="EA icon">
                </a>
                <button class="button button--white text--bold text--upper">inscreva-se já</button>
             </div>
@@ -87,17 +92,17 @@
       </div>
    </main>
    <article class="boxies">
-      <h1 class="title--large text--center text--white">jogos battlefield</h1>
-      <div class="boxies__container container">
-         <div class="boxies__content">
-            <a class="boxies__image-link" href="#"><h3 class="title--small"></h3></a>
-         </div>
-         <div class="boxies__content">
-            <a class="boxies__image-link" href="#"><h3 class="title--small"></h3></a>
-         </div>
-         <div class="boxies__content">
-            <a class="boxies__image-link" href="#"><h3 class="title--small"></h3></a>
-         </div>
+      <h1 class="title--large text--center text--white" id="test">jogos battlefield</h1>
+      <div class="boxies__battle boxies__container container">
+         <a class="boxies__content link__battlefield link__battlefield--1" href="#">
+            <h3 class="title--small scale">Battlefield<br>1</h3>
+         </a>
+         <a class="boxies__content link__battlefield link__battlefield--4" href="#">
+            <h3 class="title--small scale">battlefield<br>4</h3>
+         </a>
+         <a class="boxies__content link__battlefield link__battlefield--5" href="#">
+            <h3 class="title--small scale">battlefield<br>5</h3>
+         </a>
       </div>
       <div class="container">
          <button class="button button--white text--upper text--bold">todos os jogos de battlefield</button>
@@ -106,7 +111,8 @@
       <h1 class="title--large text--center text--white">últimas notícias</h1>
       <div class="news__container boxies__container container">
          <a class="news__content boxies__content" href="#">
-            <img class="news__image" src="img/battlefield-news__image.jpg" alt="battlefield atualization 5.0.0 image">
+            <img class="news__image" src="img/news--battlefield---image-1.jpg"
+               alt="battlefield atualization 5.0.0 image">
             <div class="news__text">
                <div class="news__dates">
                   <h3 class="news__game-name">battlefield 2042</h3>
@@ -117,24 +123,26 @@
             </div>
          </a>
          <a class="news__content boxies__content" href="#">
-            <img class="news__image" src="img/battlefield-news__image-2" alt="battlefield update image">
+            <img class="news__image" src="img/news--battlefield---image-2.jpg" alt="battlefield update image">
             <div class="news__text">
                <div class="news__dates">
                   <h3 class="news__game-name">battlefield 2042</h3>
                   <p class="news__date">30/05/2023</p>
                </div>
-               <h2 class="news__title title--small">Briefing do Battlefield - Atualização de Desenvolvimento - maio de 2023</h2>
+               <h2 class="news__title title--small">Briefing do Battlefield - Atualização de Desenvolvimento - maio de
+                  2023</h2>
                <p class="news__info">Briefing do Battlefiekd - Atualização de Desenvolvimento - maio 2023</p>
             </div>
          </a>
          <a class="news__content boxies__content" href="#">
-            <img class="news__image" src="img/battlefield-news__image-3" alt="battlefield update image">
+            <img class="news__image" src="img/news--battlefield---image-3.jpg" alt="battlefield update image">
             <div class="news__text">
                <div class="news__dates">
                   <h3 class="news__game-name">battlefield 2042</h3>
                   <p class="news__date">24/05/2023</p>
                </div>
-               <h2 class="news__title title--small">Notas de Desenvolvimento - Reformulando o equipamento dos veículos</h2>
+               <h2 class="news__title title--small">Notas de Desenvolvimento - Reformulando o equipamento dos veículos
+               </h2>
                <p class="news__info">Notas de Desenvolvimento reformulando o equipamento dos veículos</p>
             </div>
          </a>
@@ -152,12 +160,13 @@
       <div class="form__container container">
          <div class="form__text">
             <h1 class="title--large text--white">inscreva-se ppara receber as notícias de battlefield</h1>
-            <p class="text--white text--left">Inscreva-se hoje mesmo e receba por e-mail as últimas notícias, vídeos, ofertas e muito mais de Battlefield (além de outras notícias, produtos, eventos e promoções da EA).</p>
+            <p class="text--white text--left">Inscreva-se hoje mesmo e receba por e-mail as últimas notícias, vídeos,
+               ofertas e muito mais de Battlefield (além de outras notícias, produtos, eventos e promoções da EA).</p>
          </div>
-         <div class="form__inputs">
-            <input class="input form__input-email" placeholder="E-mail" type="email" name="" id="">
-            <input class="input form__input-nasc" type="date" name="" id="">
-            <select class="input form__input-select" name="" id="">
+         <form class="form__inputs" action="">
+            <input class="input form__input-email scale" placeholder="E-mail" type="email" name="" id="" required>
+            <input class="input form__input-nasc scale" type="date" name="" id="" required>
+            <select class="input form__input-select scale" name="" id="">
                <option value="Estados Unidos" checked>Estados Unidos</option>
                <option value="">Alemanha</option>
                <option value="">Austrália</option>
@@ -167,21 +176,94 @@
                <option value="">Chile</option>
             </select>
             <div class="container__checkbox">
-               <input class="checkbox" type="checkbox" name="" id="checkbox_creator">
-               <label for="checkbox_creator">Posso cancelar a assinatura a qualquer momento ao alterar minhas <a href="#">preferências de e-mail</a>, entrar em contato com <a href="#">privacyadmin.ea.com</a> ou escrever para Electronic Arts Inc., ATTN: Email Opt-Out, 209 Redwood Shores Pkwy, Redwood City, CA, 94065, USA.</label>
+               <input class="checkbox hidden" type="checkbox" name="" id="checkbox_creator" required>
+               <div class="checkbox__icon">
+                  <div class="checked__icon"></div>
+               </div>
+               <label id="label_form" for="checkbox_creator">Posso cancelar a assinatura a qualquer momento ao alterar
+                  minhas <a href="#" target="_blank">preferências de e-mail</a>, entrar em contato com <a href="#"
+                     target="_blank">privacyadmin.ea.com</a> ou escrever para Electronic Arts Inc., ATTN: Email Opt-Out,
+                  209 Redwood Shores Pkwy, Redwood City, CA, 94065, USA.</label>
             </div>
-            <button class="button button--orange text--upper background--orange text--white text--upper">inscrever-se</button>
-         </div>
+            <button id="submit_form"
+               class="button button--orange text--upper background--orange text--white text--upper"
+               type="submit">inscrever-se</button>
+         </form>
       </div>
    </section>
    <section class="terms">
       <div class="container">
-         <p class="text--white">CONEXÃO DE INTERNET; CONTA EA; ACEITAÇÃO DO CONTRATO DO USUÁRIO DA EA (<a href="#">terms.ea.com/br</a>) E CONTRATO DE LICENÇA DE USUÁRIO FINAL DO ORIGIN (<a href="#">ea.com/pt-br/legal</a>); INSTALAÇÃO DO SOFTWARE CLIENTE ORIGIN (<a href="#">origin.com/download</a>); PARA JOGAR, É PRECISO CONCORDAR COM A POLÍTICA DE PRIVACIDADE E COOKIES DA EA (<a href="#">privacy.ea.com/br</a>) E O REGISTRO COM UM CÓDIGO DE PRODUTO DE USO ÚNICO. O REGISTRO DO CÓDIGO DO PRODUTO É LIMITADO A UMA CONTA EA POR CÓDIGO. OS CÓDIGOS DO PRODUTO SÃO INTRANSFERÍVEIS DEPOIS DE USADOS E ESTARÃO VÁLIDOS PELO MENOS ENQUANTO OS RECURSOS ONLINE ESTIVEREM DISPONÍVEIS. VOCÊ DEVE TER 16 ANOS OU MAIS (13 ANOS OU MAIS NO REINO UNIDO) PARA ACESSAR OS RECURSOS ONLINE (A IDADE PODE VARIAR, ACESSE <a href="#">https://o.ea.com/ea/child-access-br</a> PARA MAIS DETALHES). A EA PODE FORNECER DETERMINADOS CONTEÚDOS E/OU ATUALIZAÇÕES GRATUITOS SE, E QUANDO, ESTIVEREM DISPONÍVEIS. A EA PODE TIRAR DO AR RECURSOS ONLINE APÓS AVISO PRÉVIO DE 30 DIAS DIVULGADO EM <a href="#">ea.com/pt-br/service-updates</a>.</p>
+         <p class="text--white">CONEXÃO DE INTERNET; CONTA EA; ACEITAÇÃO DO CONTRATO DO USUÁRIO DA EA (<a href="#"
+               target="_blank">terms.ea.com/br</a>) E CONTRATO DE LICENÇA DE USUÁRIO FINAL DO ORIGIN (<a href="#"
+               target="_blank">ea.com/pt-br/legal</a>); INSTALAÇÃO DO SOFTWARE CLIENTE ORIGIN (<a href="#"
+               target="_blank">origin.com/download</a>); PARA JOGAR, É PRECISO CONCORDAR COM A POLÍTICA DE PRIVACIDADE E
+            COOKIES DA EA (<a href="#" target="_blank">privacy.ea.com/br</a>) E O REGISTRO COM UM CÓDIGO DE PRODUTO DE
+            USO ÚNICO. O REGISTRO DO CÓDIGO DO PRODUTO É LIMITADO A UMA CONTA EA POR CÓDIGO. OS CÓDIGOS DO PRODUTO SÃO
+            INTRANSFERÍVEIS DEPOIS DE USADOS E ESTARÃO VÁLIDOS PELO MENOS ENQUANTO OS RECURSOS ONLINE ESTIVEREM
+            DISPONÍVEIS. VOCÊ DEVE TER 16 ANOS OU MAIS (13 ANOS OU MAIS NO REINO UNIDO) PARA ACESSAR OS RECURSOS ONLINE
+            (A IDADE PODE VARIAR, ACESSE <a href="#" target="_blank">https://o.ea.com/ea/child-access-br</a> PARA MAIS
+            DETALHES). A EA PODE FORNECER DETERMINADOS CONTEÚDOS E/OU ATUALIZAÇÕES GRATUITOS SE, E QUANDO, ESTIVEREM
+            DISPONÍVEIS. A EA PODE TIRAR DO AR RECURSOS ONLINE APÓS AVISO PRÉVIO DE 30 DIAS DIVULGADO EM <a href="#"
+               target="_blank">ea.com/pt-br/service-updates</a>.</p>
       </div>
    </section>
    <footer>
-      
+      <div class="footer__menu-social container">
+         <div class="footer__menu">
+            <h2 class="text--upper text--white">battlefield</h2>
+            <ul class="footer__menu__list">
+               <li class="footer__menu__item"><a class="footer__menu__link" title="Jogos" href="#">jogos</a></li>
+               <li class="footer__menu__item"><a class="footer__menu__link" title="Calendário" href="#">calendário</a>
+               </li>
+               <li class="footer__menu__item"><a class="footer__menu__link" title="Notícias" href="#">notícias</a></li>
+               <li class="footer__menu__item"><a class="footer__menu__link" title="Fóruns" href="#">fóruns</a></li>
+            </ul>
+         </div>
+         <div class="footer__socials">
+            <h2 class="text--upper text--white" lang="en">join the conversation</h2>
+            <ul class="footer__menu__list">
+               <li class="footer__menu__item scale"><a class="footer__menu__link" href="#"><img
+                        class="footer__menu__icon" title="Facebook" src="img/social--icon---facebook.svg"
+                        alt="facebook icon"></a></li>
+               <li class="footer__menu__item scale"><a class="footer__menu__link" href="#"><img
+                        class="footer__menu__icon" title="Twitter" src="img/social--icon---twitter.svg"
+                        alt="twitter icon"></a></li>
+               <li class="footer__menu__item scale"><a class="footer__menu__link" href="#"><img
+                        class="footer__menu__icon" title="Youtube" src="img/social--icon---youtube.svg"
+                        alt="youtube icon"></a></li>
+               <li class="footer__menu__item scale"><a class="footer__menu__link" href="#"><img
+                        class="footer__menu__icon" title="Instagram" src="img/social--icon---instagram.svg"
+                        alt="instagram icon"></a></li>
+               <li class="footer__menu__item scale"><a class="footer__menu__link" href="#"><img
+                        class="footer__menu__icon" title="Discord" src="img/social--icon---discord.svg"
+                        alt="discord icon"></a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="classifications__container container">
+         <div class="partners__container">
+            <div class="partners__icons__container">
+               <a href="#">
+                  <img class="partners__icons" title="Jice" src="img/partners--icon---jice.png" alt="JICE icon">
+               </a>
+               <a href="#">
+                  <img class="partners__icons" title="Upride" src="img/partners--icon---upride.png" alt="UPRISE icon">
+               </a>
+               <a href="#">
+                  <img class="partners__icons" title="Frostbite" src="img/partners--icon---frostbite.png"
+                     alt="FROSTBITE icon">
+               </a>
+            </div>
+            <p class="text--upper text--left" lang="en">REFERENCE TO A PARTICULAR MAKE, MODEL, MANUFACTURER, AND/OR
+               VERSION OF WEAPON, GEAR OR VEHICLE IS FOR HISTORICAL ACCURACY ONLY AND DOES NOT INDICATE ANY SPONSORSHIP
+               OR ENDORSEMENT OF ANY TRADEMARK OWNER.</p>
+         </div>
+         <a href="#" class="age-restriction">
+            <h2 class="text--white title--large">16</h2>
+         </a>
+      </div>
    </footer>
    <script src="script.js"></script>
 </body>
+
 </html>
